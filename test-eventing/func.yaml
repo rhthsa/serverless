@@ -1,0 +1,10 @@
+name: test-eventing
+namespace: test-eventing
+runtime: go
+image: docker.io/chatapazar/test-eventing:latest
+imageDigest: sha256:db6478bc41e0e10cce2b6d35f75f9113122fb543be2b47cdce9fc54bbf1360b3
+trigger: events
+builder: quay.io/boson/faas-go-builder
+builderMap:
+  default: quay.io/boson/faas-go-builder
+envVars: {}

@@ -1,0 +1,10 @@
+name: test-faas
+namespace: test-faas
+runtime: node
+image: docker.io/chatapazar/test-faas:latest
+imageDigest: sha256:53d0d875f0bd4d50844c5d6b89b100962f6ef60389aca84ddc6a4e5da749787b
+trigger: http
+builder: quay.io/boson/faas-nodejs-builder
+builderMap:
+  default: quay.io/boson/faas-nodejs-builder
+envVars: {}
